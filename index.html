@@ -1,14 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nuestra Boda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style></style>
 </head>
 
 <body>
-    <h1>HOlaaa</h1>
+    <header class="header">
+        <h3 class="names-logo">L&C</h3>
+
+        <div class="menu-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45px" height="45px">
+                <path
+                    d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+            </svg>
+        </div>
+        </div>
+
+    </header>
+    <div class="hero">
+
+        <h3>Nos vamos a casar</h3>
+        <h1 class="names">
+            <span>
+                LAURA&CRISTIAN
+            </span>
+
+        </h1>
+        <div class="date-hero">
+            <p>Sábado, 9 de nov de 2024</p>
+            <p>Casa Verde</p>
+
+        </div>
+        <a href="" class="button">Detalles</a>
+        <img src="img/_MG_3239_copia.jpg" alt="">
+    </div>
+    <section class="details">
+        <h2>Celebrando nuestro amor con quien amamos</h2>
+
+        <img class="img-section" src="img/_MG_8318.jpg" alt="">
+
+        <div class="details-content">
+            <ul>
+                <li>
+                    <h4>01. Ceremonia</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                </li>
+                <li>
+                    <h4>02. Coctel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                </li>
+                <li>
+                    <h4>03. Comida</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="text-info" id="about-us">
+        <h3>No es solo una historia más de amor</h3>
+        <div class="info-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero esse in tempora assumenda laboriosam
+                aperiam nobis ducimus sit iure minus velit ratione nulla pariatur, itaque illum hic eaque ipsam. Illum?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero esse in tempora assumenda laboriosam
+                aperiam nobis ducimus sit iure minus velit ratione nulla pariatur, itaque illum hic eaque ipsam. Illum?
+            </p>
+        </div>
+    </section>
+
+    <section class="images-section" id="images">
+        <div class="img-container">
+            <img src="img/_MG_8416.jpg" alt="">
+            <img src="img/_MG_8446.jpg" alt="">
+            <img src="img/_MG_8274.jpg" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+
+
+        <div class="telephones">
+            <h3>Llámanos</h3>
+            <h3>Laura: 616-136-000</h3>
+            <h3>Cristian: 676-624-418</h3>
+        </div>
+        <div>
+            <p>Horario</p>
+            <p>Información</p>
+            <p>Nosotros</p>
+
+        </div>
+        <p>&copy; Thanks to all of you.</p>
+    </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll('.img-container img');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);  // Dejar de observar una vez que la imagen se ha mostrado
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        images.forEach(image => {
+            observer.observe(image);
+        });
+    });
+</script>
 
 </html>

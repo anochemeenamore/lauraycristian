@@ -1,0 +1,187 @@
+:root {
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #e8e6e6;
+    --main-text-color: #000000;
+    --primary-color: #FFA69E;
+    --secondary-color: #AA4465;
+    --third-color: #462255;
+    /* FONTs */
+
+    --font_0: normal normal bold 40px/1em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_1: normal normal normal 12.8px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+    --font_2: normal normal bold 32px/1.2em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_3: normal normal bold 27.200000000000003px/1.2em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_4: normal normal bold 23.200000000000003px/1.3em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_5: normal normal bold 21.6px/1.3em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_6: normal normal bold 17.6px/1.3em cormorantgaramond-light, cormorantgaramond, 'cormorant garamond', serif;
+    --font_7: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    --font_8: normal normal normal 14.4px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    --font_9: normal normal normal 12px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    --font_10: normal normal normal 10.4px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+
+}
+
+* {
+    font-weight: 100;
+    color: rgba(0, 0, 0, .7);
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+.names {
+    font: var(--font_0);
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: var(--font_2);
+    font-size: 28px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    font-family: var(--font_8);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+a {
+    margin: 20px;
+}
+
+header {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+
+h3.names-logo {
+    margin: auto;
+    font-family: var(--font_6);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    letter-spacing: -2px;
+}
+
+.menu-mobile {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+.hero {
+    margin-top: 60px;
+}
+
+.date-hero {
+    margin: 20px 20px 45px;
+}
+
+.button {
+    display: block;
+    width: 70px;
+    text-align: center;
+    border: solid 1px #000;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / .8;
+    object-fit: cover;
+}
+
+.details {
+    background-color: var(--secondary-bg-color);
+    margin-top: -25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.details ul li {
+    margin: 10px -20px;
+}
+
+.details h4 {
+    font-size: 20px;
+    margin: 30px 0px 25px;
+}
+
+.details ul p {
+    margin: 15px 0px 30px 15px
+}
+
+.img-section {
+    margin: 0 20px;
+    max-width: calc(100% - 40px);
+    max-height: 350px;
+    aspect-ratio: .6 / 1;
+    display: block;
+}
+
+.text-info h3 {
+    margin: 30px 20px;
+    font-size: 25px;
+}
+
+.text-info div {
+    margin: 0px 20px;
+}
+
+.text-info div p {
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.img-container img {
+    opacity: 0;
+    box-shadow: 0px 0px 5px 0px #000000;
+    margin-top: 10px;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.img-container img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer {
+    margin-top: 40px;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding: 20px;
+}
