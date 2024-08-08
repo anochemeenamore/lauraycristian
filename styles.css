@@ -88,6 +88,21 @@ h3.names-logo {
     letter-spacing: -2px;
 }
 
+.control-button {
+    cursor: pointer;
+    position: absolute;
+}
+
+.play-icon {
+    display: block;
+    /* Mostrar icono de play por defecto */
+}
+
+.pause-icon {
+    display: none;
+    /* Ocultar icono de pause por defecto */
+}
+
 .menu-mobile {
     width: 50%;
     text-align: right;

@@ -11,6 +11,13 @@
 
 <body>
     <header class="header">
+        <!-- Audio oculto -->
+        <audio id="background-music" autoplay loop>
+            <source
+                src="https://res.cloudinary.com/dkafcgtc2/video/upload/v1723147239/WEDDING/audio/Anoche_me_enamor%C3%A9_rielfi.mp3"
+                type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
         <h3 class="names-logo">L&C</h3>
 
         <div class="menu-mobile">
@@ -23,6 +30,18 @@
 
     </header>
     <div class="hero">
+        <div class="play-pause-container">
+
+            <svg id="playPauseBtn" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Play icon -->
+                <polygon id="playIcon" points="30,20 70,50 30,80" fill="black" />
+                <!-- Pause icon -->
+                <g id="pauseIcon" style="display:none;">
+                    <rect x="30" y="20" width="15" height="60" fill="black" />
+                    <rect x="55" y="20" width="15" height="60" fill="black" />
+                </g>
+            </svg>
+        </div>
 
         <h3>Nos vamos a casar</h3>
         <h1 class="names">
@@ -37,7 +56,8 @@
 
         </div>
         <a href="" class="button">Detalles</a>
-        <img src="img/_MG_3239_copia.jpg" alt="">
+        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1723147261/WEDDING/IMG/_MG_3239_copia_vaupzn.jpg"
+            alt="">
     </div>
     <section class="details">
         <h2>Celebrando nuestro amor con quien amamos</h2>
@@ -96,26 +116,45 @@
         </div>
         <p>&copy; Thanks to all of you.</p>
     </footer>
-</body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll('.img-container img');
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('.img-container img');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target);  // Dejar de observar una vez que la imagen se ha mostrado
-                }
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);  // Dejar de observar una vez que la imagen se ha mostrado
+                    }
+                });
+            }, {
+                threshold: 0.1
             });
-        }, {
-            threshold: 0.1
+
+            images.forEach(image => {
+                observer.observe(image);
+            });
         });
 
-        images.forEach(image => {
-            observer.observe(image);
+        // AUDIO
+        const audio = document.getElementById('background-music');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+
+        playPauseBtn.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            } else {
+                audio.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
         });
-    });
-</script>
+    </script>
+
+</body>
 
 </html>
