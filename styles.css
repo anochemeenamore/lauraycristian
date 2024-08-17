@@ -88,19 +88,19 @@ h3.names-logo {
     letter-spacing: -2px;
 }
 
-.control-button {
-    cursor: pointer;
-    position: absolute;
+.play-pause-container {
+    position: fixed;
+    top: 9%;
+    right: 5%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 2;
+
 }
 
-.play-icon {
-    display: block;
-    /* Mostrar icono de play por defecto */
-}
-
-.pause-icon {
-    display: none;
-    /* Ocultar icono de pause por defecto */
+#playPauseBtn {
+    color: #FFA69E;
 }
 
 .menu-mobile {

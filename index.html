@@ -31,18 +31,26 @@
     </header>
     <div class="hero">
         <div class="play-pause-container">
-
-            <svg id="playPauseBtn" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <svg id="playPauseBtn" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <!-- Play icon -->
-                <polygon id="playIcon" points="30,20 70,50 30,80" fill="black" />
+                <g id="playIcon">
+                    <path fill=" #bd8a6b" d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16
+                		S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z" />
+                    <path fill="#bd8a6b" d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8
+                		c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218
+                		C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8
+                		c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382
+                		C19.198,16.147,19.122,16.3,18.985,16.401z" />
+                </g>
                 <!-- Pause icon -->
-                <g id="pauseIcon" style="display:none;">
-                    <rect x="30" y="20" width="15" height="60" fill="black" />
-                    <rect x="55" y="20" width="15" height="60" fill="black" />
+                <g id="pauseIcon">
+                    <path fill="#bd8a6b" d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16
+            		S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z" />
+                    <rect x="12" y="10" width="3" height="12" fill="#bd8a6b" />
+                    <rect x="17" y="10" width="3" height="12" fill="#bd8a6b" />
                 </g>
             </svg>
         </div>
-
         <h3>Nos vamos a casar</h3>
         <h1 class="names">
             <span>
@@ -55,28 +63,39 @@
             <p>Casa Verde</p>
 
         </div>
-        <a href="" class="button">Detalles</a>
+
+        <a href="#details-content" class="button">Detalles</a>
+
         <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1723147261/WEDDING/IMG/_MG_3239_copia_vaupzn.jpg"
             alt="">
+
     </div>
     <section class="details">
         <h2>Celebrando nuestro amor con quien amamos</h2>
 
         <img class="img-section" src="img/_MG_8318.jpg" alt="">
 
-        <div class="details-content">
+        <div id="details-content" class="details-content">
             <ul>
                 <li>
-                    <h4>01. Ceremonia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                    <h4>1. Ceremonia</h4>
+                    <p>12:00 - Comienza la ceremonia</p>
                 </li>
                 <li>
-                    <h4>02. Coctel</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                    <h4>2. Cóctel</h4>
+                    <p>13:00 - Disfruta del cóctel de bienvenida</p>
                 </li>
                 <li>
-                    <h4>03. Comida</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicingt</p>
+                    <h4>3. Banquete</h4>
+                    <p>14:00 - Inicia la comida</p>
+                </li>
+                <li>
+                    <h4>4. Banda y barra libre</h4>
+                    <p>17:00 - Música en vivo y barra libre</p>
+                </li>
+                <li>
+                    <h4>5. DJ</h4>
+                    <p>20:00 - ¡La fiesta continúa con el DJ!</p>
                 </li>
             </ul>
         </div>
@@ -105,6 +124,9 @@
 
         <div class="telephones">
             <h3>Llámanos</h3>
+            <h3><a href="https://wa.me/34616136000">Laura: 616-136-000</a></h3>
+            <h3><a href="https://wa.me/34676624418">Cristian: 676-624-418</a></h3>
+
             <h3>Laura: 616-136-000</h3>
             <h3>Cristian: 676-624-418</h3>
         </div>
@@ -142,12 +164,28 @@
         const playIcon = document.getElementById('playIcon');
         const pauseIcon = document.getElementById('pauseIcon');
 
+        if (audio.paused) {
+            console.log("paused")
+            audio.play();
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+        } else {
+            console.log("play")
+
+            audio.pause();
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+        }
+
         playPauseBtn.addEventListener('click', function () {
             if (audio.paused) {
+                console.log("paused")
                 audio.play();
                 playIcon.style.display = 'none';
                 pauseIcon.style.display = 'block';
             } else {
+                console.log("play")
+
                 audio.pause();
                 playIcon.style.display = 'block';
                 pauseIcon.style.display = 'none';
