@@ -123,12 +123,13 @@
 
 
         <div class="telephones">
-            <h3>Llámanos</h3>
-            <h3><a href="https://wa.me/34616136000">Laura: 616-136-000</a></h3>
-            <h3><a href="https://wa.me/34676624418">Cristian: 676-624-418</a></h3>
-
-            <h3>Laura: 616-136-000</h3>
-            <h3>Cristian: 676-624-418</h3>
+            <h3>Confirma:</h3>
+            <h3>Laura:<a class="whatapp-link"
+                    href=" https://wa.me/34616136000?text=Hola%20Laura,%20necesito%20hablar%20contigo"
+                    href="https://wa.me/34616136000">616-136-000</a></h3>
+            <h3>Cristian:<a class="whatapp-link"
+                    href="https://wa.me/34676624418?text=Hola%20Cristian,%20me%20gustaría%20consultarte%20algo">676-624-418</a>
+            </h3>
         </div>
         <div>
             <p>Horario</p>
@@ -163,19 +164,8 @@
         const playPauseBtn = document.getElementById('playPauseBtn');
         const playIcon = document.getElementById('playIcon');
         const pauseIcon = document.getElementById('pauseIcon');
+        pauseIcon.style.display = 'none';
 
-        if (audio.paused) {
-            console.log("paused")
-            audio.play();
-            playIcon.style.display = 'none';
-            pauseIcon.style.display = 'block';
-        } else {
-            console.log("play")
-
-            audio.pause();
-            playIcon.style.display = 'block';
-            pauseIcon.style.display = 'none';
-        }
 
         playPauseBtn.addEventListener('click', function () {
             if (audio.paused) {
