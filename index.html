@@ -4,106 +4,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Boda</title>
+    <title>Anoche me enamoré</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220773/WEDDING/IMG/draw2_nn0ehr.png"
+        type="image/png">
     <style></style>
 </head>
 
 <body>
-    <header class="header">
-        <!-- Audio oculto -->
-        <audio id="background-music" controls autoplay loop>
-            <source
-                src="https://res.cloudinary.com/dkafcgtc2/video/upload/v1723147239/WEDDING/audio/Anoche_me_enamor%C3%A9_rielfi.mp3"
-                type="audio/mpeg">
-            Tu navegador no soporta la reproducción de audio.
-        </audio>
-        <h3 class="names-logo">L&C</h3>
+    <nav class="mobile-menu">
+        <div class="close-menu"><button class="close-button">&times;</button></div>
+        <ul>
+            <li>
+                <h3>
+                    <a href="#header">Inicio</a>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="#infocard">Información</a>
+                </h3>
+            </li>
+            <li>
+                <h3><a href="#timeline">Horario</a></h3>
+            </li>
+            <li>
+                <h3><a href="#contacta">Contacto</a></h3>
+            </li>
 
-        <div class="menu-mobile">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45px" height="45px">
-                <path
-                    d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
-            </svg>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="navbar-mobile">
+            <h3 class="names-logo">L&C</h3>
+            <div class="header-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45px" height="45px">
+                    <path
+                        d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+                </svg>
+            </div>
         </div>
-        </div>
+        <nav class="navbar-container">
+            <div class="navbar">
+
+                <h3 class="names-logo">L&C</h3>
+                <ul>
+                    <li>
+                        <h3><a href="#timeline">Horario</a></h3>
+                    </li>
+
+                    <li>
+                        <h3><a href="#infocard">Información</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#contacta">Contacto</a></h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#header">Inicio</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
     </header>
-
-
-    <div class="hero">
-        <div class="play-pause-container">
-            <svg id="playPauseBtn" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <!-- Play icon -->
-                <g id="playIcon">
-                    <path fill=" #bd8a6b" d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16
-                		S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z" />
-                    <path fill="#bd8a6b" d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8
-                		c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218
-                		C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8
-                		c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382
-                		C19.198,16.147,19.122,16.3,18.985,16.401z" />
-                </g>
-                <!-- Pause icon -->
-                <g id="pauseIcon">
-                    <path fill="#bd8a6b" d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16
-            		S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z" />
-                    <rect x="12" y="10" width="3" height="12" fill="#bd8a6b" />
-                    <rect x="17" y="10" width="3" height="12" fill="#bd8a6b" />
-                </g>
-            </svg>
+    <main>
+        <div class="hero-container" id="header">
+            <div class="hero">
+                <h1 class="names">
+                    <span>
+                        LAURA<br>&<br>CRISTIAN
+                    </span>
+                </h1>
+                <div class="date-hero">
+                    <p>Sábado, 9 de noviembre 2024</p>
+                    <p class="casa-verde">LA CASA VERDE</p>
+                    <p>(Torrelodones)</p>
+                </div>
+                <div class="draw-1">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220689/WEDDING/IMG/draw1_qescxa.png"
+                        alt="Dibujo Laura y Cristian">
+                </div>
+            </div>
         </div>
-        <!-- <h3>Nos vamos a casar</h3> -->
-        <h1 class="names">
-            <span>
-                LAURA<br>&<br>CRISTIAN
-            </span>
+        <section id="timeline" class="timeline-container">
+            <h2>GUÍA PARA SOBREVIVIR AL DÍA</h2>
+            <div id="timeline" class="timeline">
+                <div class="timeline-info-left">
+                    <div class="timeline-text1">
+                        <p>Ceremonia</p>
+                        <p>12:00</p>
+                    </div>
+                    <div class="timeline-text3">
+                        <p>Comida</p>
+                        <p>14:00</p>
+                    </div>
+                    <div class="timeline-text5">
+                        <p>Fiesta</p>
+                        <p>18:30</p>
+                    </div>
+                </div>
+                <div class="timeline-imgs">
+                    <div class="image-wrapper">
+                        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220735/WEDDING/IMG/pareja_psbw1s.png"
+                            alt="" class="Pareja Monchichis">
+                    </div>
+                    <div class="image-wrapper item-before">
+                        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220733/WEDDING/IMG/cerveza_vfcl2s.png"
+                            alt="" class="Jarra de cerveza">
+                    </div>
+                    <div class="image-wrapper item-before">
+                        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220736/WEDDING/IMG/tarta_smfteu.png"
+                            alt="" class="Tarta de fresas">
+                    </div>
+                    <div class="image-wrapper item-before">
+                        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220733/WEDDING/IMG/band_nk37pp.png"
+                            alt="" class="Logo banda">
+                    </div>
+                    <div class="image-wrapper item-before">
+                        <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220734/WEDDING/IMG/disco_ovyzey.png"
+                            alt="" class="Bola discoteca">
+                    </div>
+                </div>
+                <div class="timeline-info-right">
+                    <div class="timeline-text2">
+                        <p>Cóctel</p>
+                        <p>13:00</p>
+                    </div>
+                    <div class="timeline-text4">
+                        <p>Banda</p>
+                        <p>17:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-info">
+            <h2 id="infocard">TODO LO QUE NECESITAS SABER</h2>
+            <div class="cards-info-container">
+                <article class="infocard">
+                    <header class="blue">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220756/WEDDING/IMG/logollegando_irbxip.png"
+                            alt="Shinchan-llegando">
+                    </header>
+                    <section class="card-content">
+                        <h3 class="info-card-title">CÓMO LLEGAR</h3>
+                        <p> Av. de Rosario Manzaneque, 25, 28250
+                            Torrelodones,Madrid</p>
+                        <figure class="map-container">
+                            <iframe width="200" height="150" style="border:0;" loading="lazy" allowfullscreen
+                                src="https://www.google.com/maps/embed/v1/place?q=40.58487230593684,-3.952508352201996&key=AIzaSyCqvxZGuOj-wLbgojact-qwGj-SPvcdpX4">
+                            </iframe>
+                        </figure>
+                    </section>
+                </article>
+                <article class="infocard">
+                    <header class="green">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220757/WEDDING/IMG/logotransporte_yhnvpt.png"
+                            alt="Coche bola de dragón">
+                    </header>
+                    <section class="card-content">
+                        <ul>
+                            <li>
+                                <h4>Si vienes en coche:</h4>
+                                <p>Está a unos 20 minutos de Madrid por la A6. El lugar no tiene parking, pero se puede
+                                    aparcar el coche en los
+                                    alrededores de la casita.</p>
+                            </li>
+                            <li>
+                                <h4>Si necesitas transporte:</h4>
+                                <p>Dispondremos de un autobús que os recogerá y os devolverá al mismo punto (aún por
+                                    determinar) cuando termine la
+                                    fiesta. Comunícanos si vas a utilizar este transporte lo antes posible.</p>
+                                <p>*La hora y el punto de recogida se irán actualizando.</p>
+                            </li>
+                        </ul>
+                    </section>
 
-        </h1>
-        <div class="date-hero">
-            <p>Sábado, 9 de noviembre 2024</p>
-            <p>La Casa Verde</p>
-            <p>(Torrelones)</p>
+                </article>
+                <article class="infocard">
+                    <header class="yellow">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220755/WEDDING/IMG/logodresscode_lf3gc4.png"
+                            alt="Sailor Moon">
+                    </header>
 
+                    <section class="card-content">
+                        <h3 class="info-card-title">CÓDIGO DE VESTIMENTA</h3>
+                        <p>Mejor si te pones cualquiera de los colores que aparecen en el arcoiris y no vienes de
+                            blanco, beige o similares. Pero vístete como te sientas bien y más adecuado para una boda de
+                            día.</p>
 
+                    </section>
+                </article>
+                <article class="infocard">
+                    <header class="orange">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220755/WEDDING/IMG/logocomidatarta_tfbbtd.png"
+                            alt="Tarta Blackstones">
+                    </header>
+                    <section class="card-content">
+                        <h3 class="info-card-title">COMIDA Y ALÉRGENOS</h3>
+                        <p>Si tienes alguna intolerancia o alergia alimentaria, no dudes en comunicárnoslo. Haremos todo
+                            lo posible para
+                            ofrecerte las facilidades necesarias y que así todos podamos disfrutar por igual.</p>
+
+                    </section>
+                </article>
+                <article class="infocard">
+                    <header class="pink">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220754/WEDDING/IMG/logocasaverde_mr6lll.png"
+                            alt="Logo Casa Verde">
+                    </header>
+                    <section class="card-content">
+                        <h3 class="info-card-title">INFO GENERAL</h3>
+                        <p>Es otoño, pero si hace una mañana soleada, haremos el cóctel fuera de la casa.</p>
+                        <p>El resto de las actividades de la boda se llevarán a cabo en el interior, ¡no queremos pasar
+                            frío, que ya vamos
+                            teniendo una edad!</p>
+                    </section>
+                </article>
+                <article class="infocard">
+                    <header class="darkblue">
+                        <img class="logo-card"
+                            src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220753/WEDDING/IMG/logobaile_xkqzdf.png"
+                            alt="Doraemon bailando">
+                    </header>
+                    <section class="card-content">
+                        <h3 class="info-card-title"></h3>
+                        <p>Recuerda traer el estómago vacío, un hígado fuerte y mejores habilidades de baile que
+                            nosotros
+                            (que no es difícil).</p>
+                        <p>Si quieres venir con alguien que no aparece en tu invitación comunícaselo a los novios.</p>
+                        <p>Fecha límite para confirmar tu asistencia
+                            <span style="font-weight: bold;">13/10/2024</span>
+                        </p>
+                        <a class="btn-secondary" href="#contacta">Confirma</a>
+
+                    </section>
+                </article>
+            </div>
+        </section>
+        <section id="carousel" class="carousel">
+            <div class="container-first-photo">
+                <div class="first-photo">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220773/WEDDING/IMG/draw2_nn0ehr.png"
+                        alt="Dibujo Laura y Cristian2">
+                </div>
+            </div>
+            <div class="container-carousel">
+                <div class="img-carousel">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220812/WEDDING/IMG/Carousel_1_bec3jj.jpg"
+                        alt="LauyCris Imagen 1">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220812/WEDDING/IMG/Carousel_2_hy43iv.jpg"
+                        alt="LauyCris Imagen 2">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220810/WEDDING/IMG/Carousel_3_uzjx5c.jpg"
+                        alt="LauyCris Imagen 3">
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220812/WEDDING/IMG/Carousel_4_rdvfat.jpg"
+                        alt="LauyCris Imagen 4">
+                </div>
+            </div>
+
+        </section>
+        <section class="container-end">
+            <div class="section-end">
+                <div class="content-end">
+                    <div>
+                        <p>
+                            *Una representación nuestra creando esta web para vosotros <span
+                                style="color: red; font-size: 20px;">♡</span>
+                        </p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1725220819/WEDDING/IMG/draw3_xwezj7.png"
+                        alt="Dibujo Laura y Cristian">
+                </div>
+                <h3>
+                    ¡Nos vemos en la boda!
+                </h3>
+            </div>
+        </section>
+        <div id="audio-container" class="player-container show">
+            <audio id="background-music" controls autoplay loop>
+                <source
+                    src="https://res.cloudinary.com/dkafcgtc2/video/upload/v1723147239/WEDDING/audio/Anoche_me_enamor%C3%A9_rielfi.mp3"
+                    type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
         </div>
-        <div class="draw-1">
-            <img src="img/draw1v2.png" alt="">
-        </div>
-
-        <!-- <a href="#details-content" class="button">Detalles</a> -->
-
-        <!-- <img src="https://res.cloudinary.com/dkafcgtc2/image/upload/v1723147261/WEDDING/IMG/_MG_3239_copia_vaupzn.jpg"
-            alt=""> -->
-
-    </div>
-    <section class="timeline">
-        <h2>Lorem ipsum, dolor sit amet</h2>
-
-    </section>
-    <!-- <section class="text-info" id="about-us">
-        <h3>No es solo una historia más de amor</h3>
-        <div class="info-content">
-            <p>Es increíble ver como una persona se va convirtiendo en algo tan importantes sin que te de cuenta, llevamos media vida conociendonos y casi 
-            </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero esse in tempora assumenda laboriosam
-                aperiam nobis ducimus sit iure minus velit ratione nulla pariatur, itaque illum hic eaque ipsam. Illum?
-            </p>
-        </div>
-    </section>
-
-    <section class="images-section" id="images">
-        <div class="img-container">
-            <img src="img/_MG_8416.jpg" alt="">
-            <img src="img/_MG_8446.jpg" alt="">
-            <img src="img/_MG_8274.jpg" alt="">
-        </div>
-    </section> -->
+    </main>
     <footer class="footer">
-
-
         <div class="telephones">
-            <h3>Confirma:</h3>
+            <h3 id="contacta">Contacta para cualquier duda:</h3>
             <h3>Laura:<a class="whatapp-link"
                     href=" https://wa.me/34616136000?text=Hola%20Laura,%20necesito%20hablar%20contigo"
                     href="https://wa.me/34616136000">616-136-000</a></h3>
@@ -112,22 +307,28 @@
             </h3>
         </div>
         <div>
-            <p>Horario</p>
-            <p>Información</p>
-            <p>Nosotros</p>
-
+            <a href="#timeline">
+                <p>Horario</p>
+            </a>
+            <a href="#infocard">
+                <p>Información</p>
+            </a>
+            <a href="#header">
+                <p>Inicio</p>
+            </a>
         </div>
         <p>&copy; Thanks to all of you.</p>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll('.img-container img');
-
+            const images = document.querySelectorAll('.infocard');
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
+                    console.log(entry); // Agrega esto para depurar
                     if (entry.isIntersecting) {
+                        console.log('Intersection detected for:', entry.target); // Y esto también
                         entry.target.classList.add('show');
-                        observer.unobserve(entry.target);  // Dejar de observar una vez que la imagen se ha mostrado
+                        observer.unobserve(entry.target);
                     }
                 });
             }, {
@@ -138,29 +339,71 @@
                 observer.observe(image);
             });
         });
+        let lastScrollTop = 0
+        document.addEventListener("scroll", () => {
+            const audioPlayer = document.getElementById("audio-container");
 
-        // AUDIO
-        const audio = document.getElementById('background-music');
-        const playPauseBtn = document.getElementById('playPauseBtn');
-        const playIcon = document.getElementById('playIcon');
-        const pauseIcon = document.getElementById('pauseIcon');
-        pauseIcon.style.display = 'none';
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
 
+            // Verificar si estamos al final de la página
+            if (scrollTop + windowHeight >= documentHeight - 100) {
+                audioPlayer.classList.remove("show");
+                console.log("if:");
 
-        playPauseBtn.addEventListener('click', function () {
-            if (audio.paused) {
-                console.log("paused")
-                audio.play();
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-            } else {
-                console.log("play")
-
-                audio.pause();
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
+                console.log("scrollTop:", scrollTop);
+                console.log("windowHeight:", windowHeight);
+                console.log("documentHeight:", documentHeight);
             }
+            else if (scrollTop < lastScrollTop) {
+                console.log("else if:");
+
+                console.log("scrollTop:", scrollTop);
+                console.log("windowHeight:", windowHeight);
+                console.log("documentHeight:", documentHeight);
+                audioPlayer.classList.add("show");
+            }
+            console.log("lastScrollTop:", lastScrollTop);
+
+            lastScrollTop = scrollTop;
         });
+
+
+        // CAROUSEL
+        const carousel = document.querySelector('.img-carousel');
+        let index = 0;
+        function moveCarousel() {
+            index++;
+            if (index >= carousel.children.length) {
+                index = 0;
+            }
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(moveCarousel, 4000);
+
+
+        const mobileMenu = document.querySelector(".header-mobile svg");
+        const closeNavMobile = document.querySelector("nav .close-menu");
+        const navMobileLinks = document.querySelectorAll("nav.mobile-menu li");
+        const navMobile = document.querySelector("nav.mobile-menu");
+
+        mobileMenu.addEventListener("click", () => {
+            console.log("click")
+            navMobile.classList.add("active");
+        });
+
+        closeNavMobile.addEventListener("click", () => {
+            navMobile.classList.remove("active");
+        });
+
+        navMobileLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navMobile.classList.remove("active");
+            });
+        })
+
     </script>
 
 </body>
