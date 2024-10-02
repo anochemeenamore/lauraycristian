@@ -95,15 +95,15 @@
                 <div class="timeline-info-left">
                     <div class="timeline-text1">
                         <p>Ceremonia</p>
-                        <p>12:00</p>
+                        <p>12:30</p>
                     </div>
                     <div class="timeline-text3">
                         <p>Comida</p>
-                        <p>14:00</p>
+                        <p>15:00</p>
                     </div>
                     <div class="timeline-text5">
                         <p>Fiesta</p>
-                        <p>18:30</p>
+                        <p>19:00</p>
                     </div>
                 </div>
                 <div class="timeline-imgs">
@@ -131,11 +131,11 @@
                 <div class="timeline-info-right">
                     <div class="timeline-text2">
                         <p>Cóctel</p>
-                        <p>13:00</p>
+                        <p>14:00</p>
                     </div>
                     <div class="timeline-text4">
                         <p>Banda</p>
-                        <p>17:00</p>
+                        <p>18:00</p>
                     </div>
                 </div>
             </div>
@@ -176,10 +176,14 @@
                             </li>
                             <li>
                                 <h4>Si necesitas transporte:</h4>
-                                <p>Dispondremos de un autobús que os recogerá y os devolverá al mismo punto (aún por
-                                    determinar) cuando termine la
-                                    fiesta. Comunícanos si vas a utilizar este transporte lo antes posible.</p>
-                                <p>*La hora y el punto de recogida se irán actualizando.</p>
+                                <p>Dispondremos de un autobús que os recogerá y os devolverá al mismo punto
+                                    <span style="font-weight: bolder;">(Intercambiador de Moncloa)</span> cuando termine
+                                    la
+                                    fiesta. Comunícanos si vas a utilizar este transporte lo antes posible.
+                                </p>
+                                <p style="color: red;">*Información actualizada: El autocar saldrá a las 12:00 desde
+                                    intercambiador de Moncloa
+                                </p>
                             </li>
                         </ul>
                     </section>
@@ -362,21 +366,10 @@
             // Verificar si estamos al final de la página
             if (scrollTop + windowHeight >= documentHeight - 100) {
                 audioPlayer.classList.remove("show");
-                console.log("if:");
-
-                console.log("scrollTop:", scrollTop);
-                console.log("windowHeight:", windowHeight);
-                console.log("documentHeight:", documentHeight);
             }
             else if (scrollTop < lastScrollTop) {
-                console.log("else if:");
-
-                console.log("scrollTop:", scrollTop);
-                console.log("windowHeight:", windowHeight);
-                console.log("documentHeight:", documentHeight);
                 audioPlayer.classList.add("show");
             }
-            console.log("lastScrollTop:", lastScrollTop);
 
             lastScrollTop = scrollTop;
         });
