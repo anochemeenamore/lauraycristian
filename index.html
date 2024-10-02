@@ -243,7 +243,7 @@
                         <p>Fecha límite para confirmar tu asistencia
                             <span style="font-weight: bold;">13/10/2024</span>
                         </p>
-                        <a class="btn-secondary" href="#contacta">Confirma</a>
+                        <a class="btn-secondary" id="sendForm">Confirma</a>
 
                     </section>
                 </article>
@@ -295,6 +295,18 @@
                 Tu navegador no soporta la reproducción de audio.
             </audio>
         </div>
+        <dialog id="phoneDialog">
+            <h2>Escríbenos para confirmar:</h2>
+            <div class="telephones">
+                <h3>Laura:<a class="whatapp-link"
+                        href="https://wa.me/34616136000?text=Hola%20Laura%2C%20contra%20todo%20pronóstico%20he%20sobrevivido%20hasta%20tu%20boda%2C%20así%20que%20confirmo%20mi%20asistencia.%20Prometo%20no%20arruinar%20la%20ceremonia%20(con%20suerte).%20Nos%20vemos%20allí.%20%F0%9F%98%8E%F0%9F%92%80">616-136-000</a>
+                </h3>
+                <h3>Cristian:<a class="whatapp-link"
+                        href="https://wa.me/34616136000?text=Hola%20Cristian%2C%20contra%20todo%20pronóstico%20he%20sobrevivido%20hasta%20tu%20boda%2C%20así%20que%20confirmo%20mi%20asistencia.%20Prometo%20no%20arruinar%20la%20ceremonia%20(con%20suerte).%20Nos%20vemos%20allí.%20%F0%9F%98%8E%F0%9F%92%80">676-624-418</a>
+                </h3>
+            </div>
+            <button id="closeDialog">Cerrar</button>
+        </dialog>
     </main>
     <footer class="footer">
         <div class="telephones">
@@ -402,7 +414,21 @@
             link.addEventListener("click", () => {
                 navMobile.classList.remove("active");
             });
+        });
+
+
+        const dialog = document.getElementById('phoneDialog');
+        const openButton = document.getElementById('sendForm');
+        const closeButton = document.getElementById('closeDialog');
+
+        openButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeButton.addEventListener('click', () => {
+            dialog.close();
         })
+
 
     </script>
 

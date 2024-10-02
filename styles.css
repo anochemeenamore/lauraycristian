@@ -687,6 +687,26 @@ div[class*="timeline-text"] p:first-child::after {
     visibility: visible;
 }
 
+#phoneDialog {
+    margin: auto;
+    border: 6px pink outset;
+    border-radius: 18px;
+}
+
+#phoneDialog h2 {
+    font-size: 20px;
+}
+
+#phoneDialog .whatapp-link {
+    padding: 7px 13px;
+    background-color: #b9e4c9;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
 @media (min-width: 700px) {
     p {
         font-size: 17px;
