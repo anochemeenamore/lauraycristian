@@ -424,7 +424,138 @@
 
         setInterval(moveCarousel, 4000);
 
+        documenet.querySelector("#sendForm").addEventListener("click", () => {
 
+            dataLayer.push({
+                "event": "view_item_list",
+                "ecommerce": {
+                    "items": [
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 1,
+                            "lang": "English",
+                            "item_name": "Europe - 1 day unlimited data",
+                            "item_id": "esim-europe-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-europe",
+                            "quantity": 1,
+                            "shopify_id": "48212216873296"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 2,
+                            "lang": "English",
+                            "item_name": "USA - 1 day unlimited data",
+                            "item_id": "esim-united-states-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-united-states",
+                            "quantity": 1,
+                            "shopify_id": "40664535498849"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 3,
+                            "lang": "English",
+                            "item_name": "Japan - 1 day unlimited data",
+                            "item_id": "esim-japan-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-japan",
+                            "quantity": 1,
+                            "shopify_id": "40659634749537"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 4,
+                            "lang": "English",
+                            "item_name": "Turkey - 1 day unlimited data",
+                            "item_id": "esim-turkey-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-turkey",
+                            "quantity": 1,
+                            "shopify_id": "40656062480481"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 5,
+                            "lang": "English",
+                            "item_name": "Asia - 1 day unlimited data",
+                            "item_id": "esim-asia-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-asia",
+                            "quantity": 1,
+                            "shopify_id": "48634200785232"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 6,
+                            "lang": "English",
+                            "item_name": "Indonesia - 1 day unlimited data",
+                            "item_id": "esim-indonesia-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-indonesia",
+                            "quantity": 1,
+                            "shopify_id": "40650610933857"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 7,
+                            "lang": "English",
+                            "item_name": "United Kingdom - 1 day unlimited data",
+                            "item_id": "esim-united-kingdom-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-united-kingdom",
+                            "quantity": 1,
+                            "shopify_id": "40650656120929"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 8,
+                            "lang": "English",
+                            "item_name": "Morocco - 1 day unlimited data",
+                            "item_id": "esim-morocco-1-day",
+                            "price": "7.9",
+                            "item_brand": "",
+                            "item_sku": "esim-morocco",
+                            "quantity": 1,
+                            "shopify_id": "48634869940560"
+                        },
+                        {
+                            "item_list_id": "FI1",
+                            "item_list_name": "Home Destinations",
+                            "index": 9,
+                            "lang": "English",
+                            "item_name": "Mexico - 1 day unlimited data",
+                            "item_id": "esim-mexico-1-day",
+                            "price": "6.9",
+                            "item_brand": "",
+                            "item_sku": "esim-mexico",
+                            "quantity": 1,
+                            "shopify_id": "40656030695521"
+                        }
+                    ],
+                    "item_list_id": "FI1",
+                    "item_list_name": "Home Destinations"
+                },
+                "gtm.uniqueEventId": 99
+            })
+
+
+        })
         const mobileMenu = document.querySelector(".header-mobile svg");
         const closeNavMobile = document.querySelector("nav .close-menu");
         const navMobileLinks = document.querySelectorAll("nav.mobile-menu li");
